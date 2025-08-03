@@ -243,7 +243,7 @@ class Config(BaseModel):
 
     input: Optional[Union[Path, str]] = None  # noqa: UP007, UP045
     input_file_type: InputFileType = InputFileType.Auto
-    output_model_type: DataModelType = DataModelType.PydanticBaseModel
+    output_model_type: DataModelType
     output: Optional[Path] = None  # noqa: UP045
     debug: bool = False
     disable_warnings: bool = False

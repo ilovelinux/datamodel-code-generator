@@ -84,8 +84,9 @@ base_options.add_argument(
 )
 base_options.add_argument(
     "--output-model-type",
-    help="Output model type (default: pydantic.BaseModel)",
+    help="Output model type",
     choices=[i.value for i in DataModelType],
+    required=True,
 )
 base_options.add_argument(
     "--url",
